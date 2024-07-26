@@ -54,3 +54,10 @@
     margin: 0 0 1rem 0; 
     font-size: 0.875rem;
 }
+
+
+@media screen and (max-width: 606px) {
+    .contact {
+        font: bold 1.5rem "Roboto", sans-serif;
+    }
+}

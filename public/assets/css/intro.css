@@ -37,3 +37,17 @@
 .start-button:hover {
     background: rgba(77, 70, 60, 0.685);
 }
+
+@media screen and (max-width: 630px) {
+    .game-title {
+        font-size: 2rem;
+        margin-bottom: 0.625rem;
+    }
+    
+    .game-description {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        max-width: 600px;
+        text-align: start;
+    }
+}
