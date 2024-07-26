@@ -1,0 +1,56 @@
+.footer {
+    margin: 2rem;
+    color: rgba(128, 96, 58, 0.849);
+    text-align: center;
+    
+}
+
+.contact {
+    padding: 1rem;
+    font: bold 1.8rem "Roboto", sans-serif;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; 
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-link {
+    display: flex;
+}
+
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact-img {
+    width: 30px; 
+    height: 30px;
+    margin: 0.3rem 0;
+    vertical-align: middle;
+}
+
+.github,
+.linkedin {
+    margin-left: -2.5rem; 
+}
+
+.footer__copy {
+    margin: 0 0 1rem 0; 
+    font-size: 0.875rem;
+}

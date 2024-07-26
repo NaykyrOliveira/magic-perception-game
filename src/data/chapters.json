@@ -1,0 +1,103 @@
+[
+  {
+    "chapter": 0,
+    "title": "Introdução do Jogo",
+    "text": "Newt Scamander: \"Olá, jovem magizoologista ! Meu nome é Newt Scamander. Hoje, eu gostaria de compartilhar uma jornada muito especial com você. Sou conhecido por minhas aventuras com criaturas mágicas, mas há algo mais sobre mim que poucas pessoas conhecem. Eu vejo o mundo de uma maneira única, graças à minha percepção mágica. E assim como eu, você também tem uma forma especial de enxergar o mundo ao seu redor. Vamos explorar juntos como essa percepção especial transforma a maneira como percebemos e interagimos com o mundo. Prepare-se para descobrir e celebrar a beleza das diferentes formas de ver e viver a vida.\"",
+    "audio": "/assets/audio/introducao.mp3",
+    "clues": [],
+    "challenges": [
+      {
+        "id": 1,
+        "title": "Iniciar a História"
+      }
+    ]
+  },
+  {
+    "chapter": 1,
+    "title": "Capítulo 1: O Início da Jornada",
+    "text": "Newt Scamander: \"A primeira coisa que você precisa saber é que pessoas com percepção mágica frequentemente percebem o mundo de maneira diferente. Imagine estar em um lugar cheio de detalhes que outras pessoas podem não notar. Vamos lançar 'Lumos Maxima' e iluminar os segredos escondidos ao nosso redor.\"",
+    "audio": "/assets/audio/capitulo1.mp3",
+    "clues": [
+      {
+        "id": 1,
+        "description": "Pista 1: \"Quando eu era criança, sempre fiquei fascinado pelos pequenos detalhes da natureza. Os padrões nas folhas, as cores vibrantes dos insetos... Isso me ajudou a entender melhor as criaturas mágicas. Você também já se sentiu assim, observando o mundo com curiosidade?\"",
+        "x": 100,
+        "y": 150
+      }
+    ],
+    "challenges": [
+      {
+        "id": 1,
+        "title": "Desafio de Observação"
+      }
+    ]
+  },
+  {
+    "chapter": 2,
+    "title": "Capítulo 2: O Desafio Social",
+    "text": "Newt Scamander: \"Às vezes, interagir com outras pessoas pode ser um desafio para aqueles com percepção mágica. Podemos não entender imediatamente as expressões faciais ou o tom de voz dos outros. Vamos encontrar a próxima pista e entender melhor como lidamos com isso.\"",
+    "audio": "/assets/audio/capitulo2.mp3",
+    "clues": [
+      {
+        "id": 2,
+        "description": "Pista 2: \"Em uma festa no Ministério da Magia, eu me sentia deslocado, observando as interações à minha volta sem realmente entender. Porém, encontrei conforto conversando com uma criatura mágica que também parecia deslocada. Já teve essa sensação de estar fora do lugar em um evento social?\"",
+        "x": 300,
+        "y": 200
+      }
+    ],
+    "challenges": [
+      {
+        "id": 2,
+        "title": "Desafio Social"
+      }
+    ]
+  },
+  {
+    "chapter": 3,
+    "title": "Capítulo 3: A Força das Paixões",
+    "text": "Newt Scamander: \"Pessoas com percepção mágica frequentemente têm interesses profundos e intensos. Para mim, são as criaturas mágicas. Esses interesses não são apenas hobbies; são partes importantes de quem somos. Vamos iluminar a próxima pista e descobrir mais.\"",
+    "audio": "/assets/audio/capitulo3.mp3",
+    "clues": [
+      {
+        "id": 3,
+        "description": "Pista 3: \"Meu amor por criaturas mágicas me levou a escrever 'Animais Fantásticos e Onde Habitam'. Esse livro não é apenas um guia, mas uma expressão de minha paixão e dedicação. Qual é a sua paixão? Algo que você ama tanto que poderia passar horas explorando?\"",
+        "x": 500,
+        "y": 300
+      }
+    ],
+    "challenges": [
+      {
+        "id": 3,
+        "title": "Desafio de Paixões"
+      }
+    ]
+  },
+  {
+    "chapter": 4,
+    "title": "Capítulo 4: O Mundo ao Nosso Redor",
+    "text": "Newt Scamander: \"O mundo pode ser um lugar desafiador para aqueles com percepção mágica, mas também é cheio de maravilhas. Compreender e aceitar nossas diferenças nos torna mais fortes. Vamos encontrar a última pista e concluir nossa jornada.\"",
+    "audio": "/assets/audio/capitulo4.mp3",
+    "clues": [
+      {
+        "id": 4,
+        "description": "Pista 4: \"Aceitar quem somos é o primeiro passo para fazer o mundo nos entender melhor. Todos temos nossas próprias habilidades e maneiras únicas de ver o mundo. Como você pode usar sua própria visão única para fazer a diferença?\"",
+        "x": 700,
+        "y": 400
+      }
+    ],
+    "challenges": [
+      {
+        "id": 4,
+        "title": "Desafio de Aceitação"
+      }
+    ]
+  },
+  {
+    "chapter": 5,
+    "title": "Capítulo 5: Conclusão",
+    "text": "Newt Scamander: \"Obrigado por me acompanhar nesta jornada. Espero que você tenha aprendido um pouco mais sobre como vejo o mundo e sobre como as pessoas com percepção mágica navegam em suas vidas. Lembre-se, cada um de nós tem algo especial a oferecer. Continue explorando, aprendendo e iluminando o caminho para os outros.\"",
+    "audio": "/assets/audio/capitulo5.mp3",
+    "clues": [],
+    "challenges": []
+  }
+]

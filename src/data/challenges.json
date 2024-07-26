@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Desafio de Observação",
+    "description": "Encontre o detalhe escondido.",
+    "image": "/assets/image/observation.png",
+    "mapAreas": [
+      {
+        "id": "detalhe1",
+        "coords": "50,50,150,150",
+        "alt": "Detalhe 1",
+        "hint": "Você encontrou o detalhe 1!"
+      }
+    ],
+    "nextChapterId": 2,
+    "isCompleted": false
+  },
+  {
+    "id": 2,
+    "title": "Desafio Social",
+    "description": "Interaja com o personagem na cena e descreva sua emoção baseada em sua expressão facial.",
+    "image": "/assets/image/social.png",
+    "mapAreas": [
+      {
+        "id": "personagem1",
+        "coords": "50,50,150,150",
+        "alt": "Personagem 1",
+        "hint": "Personagem 1 parece triste."
+      }
+    ],
+    "nextChapterId": 3,
+    "isCompleted": false
+  },
+  {
+    "id": 3,
+    "title": "Desafio de Paixões",
+    "description": "Descreva seu interesse profundo e como ele te influencia.",
+    "image": "/assets/image/passion.png",
+    "mapAreas": [
+      {
+        "id": "interesse1",
+        "coords": "50,50,150,150",
+        "alt": "Interesse 1",
+        "hint": "Este é um detalhe sobre seu interesse."
+      }
+    ],
+    "nextChapterId": 4,
+    "isCompleted": false
+  },
+  {
+    "id": 4,
+    "title": "Desafio de Criatividade",
+    "description": "Crie uma pequena história usando o elemento mágico que você encontrou.",
+    "image": "/assets/image/creative.png",
+    "mapAreas": [
+      {
+        "id": "elemento1",
+        "coords": "50,50,150,150",
+        "alt": "Elemento 1",
+        "hint": "Este é um detalhe sobre o elemento 1."
+      }
+    ],
+    "nextChapterId": 5,
+    "isCompleted": false
+  }
+]
