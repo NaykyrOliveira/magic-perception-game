@@ -43,10 +43,6 @@ O projeto utiliza Vue.js para construir uma aplicação interativa que combina n
 Esse projeto está sob a licença MIT.
 
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-
 ## Project setup
 ```
 npm install
