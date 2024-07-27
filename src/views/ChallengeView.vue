@@ -33,6 +33,7 @@
     </map>
     <div v-for="hint in revealedHints" :key="hint">{{ hint }}</div>
     <Flower v-if="currentChallenge.id === 1" />
+    <Book v-if="currentChallenge.id === 3" />
   </div>
   <p v-else>Nenhum desafio encontrado.</p>
 </template>
@@ -40,11 +41,13 @@
 <script>
 import challengesData from '@/data/challenges.json';
 import Flower from '@/components/Flower.vue';
+import Book from '@/components/Book.vue';
 
 export default {
   name: 'ChallengeView',
   components: {
     Flower,
+    Book,
   },
   data() {
     return {

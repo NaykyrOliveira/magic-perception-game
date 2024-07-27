@@ -34,8 +34,8 @@
   {
     "id": 3,
     "title": "Desafio de Paixões",
-    "description": "Descreva seu interesse profundo e como ele te influencia.",
-    "image": "/assets/image/passion.png",
+    "description": "Aqui escrevo o meu interesse profundo e como ele me influencia.",
+    "image": "/assets/image/book-2.jpg",
     "mapAreas": [
       {
         "id": "interesse1",
