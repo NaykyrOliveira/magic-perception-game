@@ -7,7 +7,7 @@
     "mapAreas": [
       {
         "id": "detalhe1",
-        "coords": "50,50,150,150",
+        "coords": "50,50,50,1",
         "alt": "Detalhe 1",
         "hint": "Você encontrou o detalhe 1!"
       }

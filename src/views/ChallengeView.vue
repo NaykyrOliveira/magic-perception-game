@@ -7,6 +7,12 @@
       usemap="#challenge-map" 
       alt="Desafio de Observação" 
     />
+    <img 
+        v-if="currentChallenge.id === 1"
+        src="/assets/image/flower.png" 
+        alt="Flower" 
+        @click="handleFlowerImageClick"
+      />
     <button 
       v-if="isChallengeCompleted" 
       @click="goToNextChapter" 
@@ -26,19 +32,19 @@
       />
     </map>
     <div v-for="hint in revealedHints" :key="hint">{{ hint }}</div>
-    <Footprints />
+    <Flower v-if="currentChallenge.id === 1" />
   </div>
   <p v-else>Nenhum desafio encontrado.</p>
 </template>
 
 <script>
 import challengesData from '@/data/challenges.json';
-import Footprints from '@/components/Footprints.vue';
+import Flower from '@/components/Flower.vue';
 
 export default {
   name: 'ChallengeView',
   components: {
-    Footprints,
+    Flower,
   },
   data() {
     return {
@@ -70,6 +76,16 @@ export default {
       if (area && !this.revealedHints.includes(area.hint)) {
         this.revealedHints.push(area.hint);
       }
+    },
+    handleFlowerImageClick() {
+      const hint = this.currentChallenge.mapAreas[0].hint; 
+      if (!this.revealedHints.includes(hint)) {
+        this.revealedHints.push(hint);
+        this.markChallengeAsCompleted();
+      }
+    },
+    markChallengeAsCompleted() {
+      this.currentChallenge.isCompleted = true;
     },
     goToNextChapter() {
       const nextChapterId = this.currentChallenge.nextChapterId;
@@ -105,5 +121,9 @@ export default {
   background: rgb(112, 75, 20);
   color: #adaba2;
   clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
+}
+
+img {
+  cursor: pointer;
 }
 </style>
