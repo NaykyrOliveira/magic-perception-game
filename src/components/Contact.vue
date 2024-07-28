@@ -5,12 +5,16 @@
                 <h3 class="contact">Contato:</h3>
                 <div class="contact-link">
                     <div class="info-item">
-                        <img :src="github" :alt="git" class="contact-img">
-                        <p class="github">GitHub</p>
+                        <img :src="github" alt="GitHub Logo" class="contact-img">
+                        <a :href="githubLink" target="_blank" rel="noopener noreferrer">
+                            <p class="github">GitHub</p>
+                        </a>
                     </div>
                     <div class="info-item">
-                        <img :src="linkedin" :alt="linkedin" class="contact-img">
-                        <p class="linkedin">LinkedIn</p>
+                        <img :src="linkedin" alt="LinkedIn Logo" class="contact-img">
+                        <a :href="linkedinLink" target="_blank" rel="noopener noreferrer">
+                            <p class="linkedin">LinkedIn</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -28,6 +32,8 @@ export default {
         return {
             github: '../assets/image/github.png',
             linkedin: '../assets/image/linkedin.png',
+            githubLink: 'https://github.com/NaykyrOliveira/magic-perception-game', 
+            linkedinLink: 'https://www.linkedin.com/in/naykyr-oliveira/' 
         };
     }
 };

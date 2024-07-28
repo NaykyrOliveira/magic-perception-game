@@ -2,7 +2,6 @@
     margin: 2rem;
     color: rgba(128, 96, 58, 0.849);
     text-align: center;
-    
 }
 
 .contact {
@@ -15,7 +14,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem; 
+    gap: 2rem;
     padding: 1rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -31,7 +30,6 @@
     display: flex;
 }
 
-
 .info-item {
     display: flex;
     align-items: center;
@@ -39,7 +37,7 @@
 }
 
 .contact-img {
-    width: 30px; 
+    width: 30px;
     height: 30px;
     margin: 0.3rem 0;
     vertical-align: middle;
@@ -47,14 +45,13 @@
 
 .github,
 .linkedin {
-    margin-left: -2.5rem; 
+    margin-left: -2.5rem;
 }
 
 .footer__copy {
-    margin: 0 0 1rem 0; 
+    margin: 0 0 1rem 0;
     font-size: 0.875rem;
 }
-
 
 @media screen and (max-width: 606px) {
     .contact {
@@ -71,4 +68,13 @@
     .info-item {
         font-size: 1rem;
     }
+}
+
+.footer a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.footer a:hover {
+    text-decoration: underline; 
 }

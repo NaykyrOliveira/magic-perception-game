@@ -23,7 +23,7 @@
     "mapAreas": [
       {
         "id": "personagem1",
-        "coords": "50,50,150,150",
+        "coords": "50,50,150,100",
         "alt": "Personagem 1",
         "hint": "Personagem 1 parece desapontado.",
         "options": [
@@ -32,7 +32,7 @@
             "isCorrect": false
           },
           {
-            "label": "Desapontado",
+            "label": "Tristeza",
             "isCorrect": true
           },
           {
@@ -60,20 +60,7 @@
         "coords": "50,50,150,150",
         "alt": "Interesse 1",
         "hint": "Este é um detalhe sobre o meu interesse.",
-        "options": [
-          {
-            "label": "Livro de Paixão",
-            "isCorrect": true
-          },
-          {
-            "label": "Manual de Magia",
-            "isCorrect": false
-          },
-          {
-            "label": "Guia de Criaturas",
-            "isCorrect": false
-          }
-        ]
+        "options": []
       }
     ],
     "nextChapterId": 4,
