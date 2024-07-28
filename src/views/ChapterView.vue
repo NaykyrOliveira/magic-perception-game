@@ -23,9 +23,9 @@
         </li>
       </ul>
     </div>
-    <div v-if="isIntroduction">
-      <button @click="goToNextChapter" class="start">Ir para o Próximo Capítulo</button>
-    </div>
+    <button v-if="isIntroduction" @click="goToNextChapter" class="chapter-next">
+      Ir para o Próximo Capítulo
+    </button>
   </div>
   <p v-else>Nenhum capítulo encontrado.</p>
 </template>
@@ -58,7 +58,8 @@ export default {
       }
     },
     goToNextChapter() {
-      this.$router.push('/chapter/1');
+      const nextChapterId = this.currentChapter.chapter + 1;
+      this.$router.push(`/chapter/${nextChapterId}`);
     }
   }
 };

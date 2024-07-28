@@ -18,12 +18,12 @@ const routes = [
   },
   {
     path: '/chapter/:chapterId',
-    name: 'chapter',
+    name: 'ChapterView',
     component: ChapterView
   },
   {
     path: '/chapter-select',
-    name: 'chapter-select',
+    name: 'ChapterSelectView',
     component: ChapterSelectView
   },
   {

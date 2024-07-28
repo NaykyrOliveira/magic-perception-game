@@ -1,0 +1,17 @@
+.book-container {
+    position: relative;
+    display: inline-block;
+}
+
+.book-image {
+    display: block;
+    max-width:  100%;
+}
+
+.book-image-wrapper {
+    position: relative;
+}
+
+.clickable-area {
+    position: absolute;
+}

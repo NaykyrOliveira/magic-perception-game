@@ -8,18 +8,11 @@
       alt="Desafio de Observação" 
     />
     <img 
-        v-if="currentChallenge.id === 1"
-        src="/assets/image/flower.png" 
-        alt="Flower" 
-        @click="handleFlowerImageClick"
-      />
-    <button 
-      v-if="isChallengeCompleted" 
-      @click="goToNextChapter" 
-      class="chapter-next"
-    >
-      Ir para o Próximo Capítulo
-    </button>
+      v-if="currentChallenge.id === 1"
+      src="/assets/image/flower.png" 
+      alt="Flower" 
+      @click="handleFlowerImageClick"
+    />
     <map name="challenge-map">
       <area
         v-for="area in currentChallenge.mapAreas"
@@ -31,9 +24,14 @@
         @click="revealDetail(area.id)"
       />
     </map>
+    <button v-if="isChallengeCompleted" @click="goToNextChapter" class="chapter-next">
+      Ir para o Próximo Capítulo
+    </button>
     <div v-for="hint in revealedHints" :key="hint">{{ hint }}</div>
     <Flower v-if="currentChallenge.id === 1" />
+    <EmotionalQuiz v-if="currentChallenge.id === 2" />
     <Book v-if="currentChallenge.id === 3" />
+    <Reflection v-if="currentChallenge.id === 4" />
   </div>
   <p v-else>Nenhum desafio encontrado.</p>
 </template>
@@ -42,12 +40,18 @@
 import challengesData from '@/data/challenges.json';
 import Flower from '@/components/Flower.vue';
 import Book from '@/components/Book.vue';
+import EmotionalQuiz from '@/components/EmotionalQuiz.vue';
+import Reflection from '@/components/Reflection.vue';
+import ButtonNextChapter from '@/components/ButtonNextChapter.vue';
 
 export default {
   name: 'ChallengeView',
   components: {
     Flower,
     Book,
+    EmotionalQuiz,
+    Reflection,
+    ButtonNextChapter
   },
   data() {
     return {
@@ -93,7 +97,7 @@ export default {
     goToNextChapter() {
       const nextChapterId = this.currentChallenge.nextChapterId;
       if (nextChapterId) {
-        this.$router.push({ name: 'ChallengeView', params: { challengeId: nextChapterId } });
+        this.$router.push({ name: 'ChapterView', params: { chapterId: nextChapterId } });
       }
     }
   }
@@ -102,21 +106,22 @@ export default {
 
 <style scoped>
 .challenge-view {
-    padding: 20px;
+  padding: 20px;
 }
 .challenge-view img {
-    max-width: 100%;
+  max-width: 100%;
 }
 .challenge-view map area {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.chapter-next{
+.chapter-next {
+  width: 300px;
   display: flex;
   align-items: center;
   margin: 1rem auto;
   height: 40px;
-  padding: 1rem 1rem;
+  padding: 1rem auto;
   font-size: 1rem;
   cursor: pointer;
   border: none;

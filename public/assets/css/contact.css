@@ -7,7 +7,7 @@
 
 .contact {
     padding: 1rem;
-    font: bold 1.8rem "Roboto", sans-serif;
+    font: bold 1.8rem "Goudy Bookletter 1911", sans-serif;
 }
 
 .footer__container {
@@ -59,5 +59,16 @@
 @media screen and (max-width: 606px) {
     .contact {
         font: bold 1.5rem "Roboto", sans-serif;
+    }
+}
+
+@media screen and (max-width: 356px) {
+    .contact {
+        padding: 1rem;
+        font: bold 1.5rem "Roboto", sans-serif;
+    }
+
+    .info-item {
+        font-size: 1rem;
     }
 }

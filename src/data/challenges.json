@@ -19,13 +19,31 @@
     "id": 2,
     "title": "Desafio Social",
     "description": "Interaja com o personagem na cena e descreva sua emoção baseada em sua expressão facial.",
-    "image": "/assets/image/social.png",
+    "image": "/assets/image/party.webp",
     "mapAreas": [
       {
         "id": "personagem1",
         "coords": "50,50,150,150",
         "alt": "Personagem 1",
-        "hint": "Personagem 1 parece triste."
+        "hint": "Personagem 1 parece desapontado.",
+        "options": [
+          {
+            "label": "Alegria",
+            "isCorrect": false
+          },
+          {
+            "label": "Desapontado",
+            "isCorrect": true
+          },
+          {
+            "label": "Tristeza",
+            "isCorrect": false
+          },
+          {
+            "label": "Surpresa",
+            "isCorrect": false
+          }
+        ]
       }
     ],
     "nextChapterId": 3,
@@ -41,7 +59,21 @@
         "id": "interesse1",
         "coords": "50,50,150,150",
         "alt": "Interesse 1",
-        "hint": "Este é um detalhe sobre seu interesse."
+        "hint": "Este é um detalhe sobre o meu interesse.",
+        "options": [
+          {
+            "label": "Livro de Paixão",
+            "isCorrect": true
+          },
+          {
+            "label": "Manual de Magia",
+            "isCorrect": false
+          },
+          {
+            "label": "Guia de Criaturas",
+            "isCorrect": false
+          }
+        ]
       }
     ],
     "nextChapterId": 4,

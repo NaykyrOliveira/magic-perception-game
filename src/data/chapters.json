@@ -5,12 +5,7 @@
     "text": "Newt Scamander: \"Olá, jovem magizoologista ! Meu nome é Newt Scamander. Hoje, eu gostaria de compartilhar uma jornada muito especial com você. Sou conhecido por minhas aventuras com criaturas mágicas, mas há algo mais sobre mim que poucas pessoas conhecem. Eu vejo o mundo de uma maneira única, graças à minha percepção mágica. E assim como eu, você também tem uma forma especial de enxergar o mundo ao seu redor. Vamos explorar juntos como essa percepção especial transforma a maneira como percebemos e interagimos com o mundo. Prepare-se para descobrir e celebrar a beleza das diferentes formas de ver e viver a vida.\"",
     "audio": "/assets/audio/introducao.mp3",
     "clues": [],
-    "challenges": [
-      {
-        "id": 1,
-        "title": "Iniciar a História"
-      }
-    ]
+    "challenges": []
   },
   {
     "chapter": 1,

@@ -8,6 +8,7 @@
     :key="kembang.id"
     :style="{ width: kembang.width, top: kembang.top, left: kembang.left }"
     />
+    <p v-if="feedback">{{ feedback }}</p>
 </div>
 </template>
 
@@ -37,29 +38,7 @@ methods: {
 };
 </script>
 
-<style scoped>
-.main {
-    width: 95vw;
-    height: 30vh;
-    margin: auto;
-}
-
-.flower {
-    position: absolute;
-    animation: spin-bloom 5s ease-in-out reverse infinite;
-    filter: opacity(60%);
-}
-
-    @keyframes spin-bloom {
-    0% {
-        transform: rotate(290deg);
-    }
-    50% {
-        transform: rotate(90deg) scale(0.1);
-    }
-    100% {
-        transform: rotate(0deg) scale(0.2);
-    }
-}
+<style>
+@import '/public/assets/css/flower.css';
 </style>
   

@@ -31,3 +31,46 @@ body {
     font-style: normal;
 }
 
+:root {
+	--blob-color: linear-gradient(
+        to right,
+        #a9e7d3, 
+        #FFFFFF   
+    );
+	--blob-size: 100px;
+}
+
+#blob {
+	animation: rotate360 20s infinite;
+	background: var(--blob-color);
+	filter: blur(calc(var(--blob-size)/2.15));
+	
+	width: var(--blob-size);
+	height: var(--blob-size);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	pointer-events: none; 
+}
+
+@keyframes rotate360 {
+	from { rotate: 0deg; }
+	50% { scale: 1 1.15; }
+	to { rotate: 360deg; }
+}
+
+#blob-blur {
+	width: 100%;
+	height: 0%;
+	position: absolute;
+	z-index: 2;
+	backdrop-filter: blur;
+	pointer-events: none; 
+}
+
+
+body {
+    cursor: url('/public/assets/image/wand.png'), auto;
+}

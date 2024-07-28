@@ -3,6 +3,8 @@
     <Navbar />
     <router-view/>
     <Contact />
+    <div id="blob"></div>
+    <div id="blob-blur"></div>
   </div>
 </template>
 
