@@ -24,6 +24,7 @@
         @click="revealDetail(area.id)"
       />
     </map>
+    
     <button v-if="isChallengeCompleted" @click="goToNextChapter" class="chapter-next">
       Ir para o Próximo Capítulo
     </button>
@@ -51,7 +52,7 @@ export default {
     Book,
     EmotionalQuiz,
     Reflection,
-    ButtonNextChapter
+    ButtonNextChapter,
   },
   data() {
     return {
@@ -91,8 +92,20 @@ export default {
         this.markChallengeAsCompleted();
       }
     },
+    handleOptionClick(option) {
+      if (this.currentChallenge.id === 2) {
+        this.selectedOption = option;
+        this.isChallengeCompleted = option.isCorrect;
+      }
+    },
     markChallengeAsCompleted() {
-      this.currentChallenge.isCompleted = true;
+      if (this.currentChallenge.id === 2) {
+        if (this.currentChallenge.mapAreas[0].options.every(option => option.isAnswered)) {
+          this.currentChallenge.isCompleted = true;
+        }
+      } else {
+        this.currentChallenge.isCompleted = true;
+      }
     },
     goToNextChapter() {
       const nextChapterId = this.currentChallenge.nextChapterId;

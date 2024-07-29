@@ -29,6 +29,15 @@
     text-decoration: underline; 
 }
 
+@media screen and (max-width: 686px) {
+    .menu {
+        padding: 0.5rem;
+        font: normal 500 1.3rem/1.5 "Goudy Bookletter 1911", sans-serif;
+        max-width: 75%;
+    }
+    
+}
+
 @media screen and (max-width: 630px) {
     .menu {
         padding: 0.5rem;

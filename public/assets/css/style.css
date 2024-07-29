@@ -74,3 +74,10 @@ body {
 body {
     cursor: url('/public/assets/image/wand.png'), auto;
 }
+
+@media screen and (max-width: 366px) {
+    :root {
+        --blob-size: 50px;
+    }
+    
+  }

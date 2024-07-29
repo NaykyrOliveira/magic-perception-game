@@ -141,3 +141,22 @@ h1 {
   }
   
 }
+
+@media screen and (max-width: 686px) {
+  .chapter-view{
+    width: 450px;
+    padding: 1px;
+    margin: 0 auto;
+  }
+
+  .chapter_curl {
+    left: 410px;
+    position: absolute;
+    transition: all .5s ease;
+  }
+
+  .copy p {
+    margin: 0;
+  }
+  
+}

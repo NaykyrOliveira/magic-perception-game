@@ -13,7 +13,8 @@
       }
     ],
     "nextChapterId": 2,
-    "isCompleted": false
+    "isCompleted": false,
+    "showNextChapterButton": true
   },
   {
     "id": 2,
@@ -23,20 +24,20 @@
     "mapAreas": [
       {
         "id": "personagem1",
-        "coords": "50,50,150,100",
+        "coords": "310,800,150,100",
         "alt": "Personagem 1",
-        "hint": "Personagem 1 parece desapontado.",
+        "hint": "",
         "options": [
           {
             "label": "Alegria",
             "isCorrect": false
           },
           {
-            "label": "Tristeza",
+            "label": "Desapontamento",
             "isCorrect": true
           },
           {
-            "label": "Tristeza",
+            "label": "Raiva",
             "isCorrect": false
           },
           {
@@ -47,7 +48,8 @@
       }
     ],
     "nextChapterId": 3,
-    "isCompleted": false
+    "isCompleted": false,
+    "showNextChapterButton": true
   },
   {
     "id": 3,
@@ -64,7 +66,8 @@
       }
     ],
     "nextChapterId": 4,
-    "isCompleted": false
+    "isCompleted": false,
+    "showNextChapterButton": true
   },
   {
     "id": 4,
@@ -80,6 +83,7 @@
       }
     ],
     "nextChapterId": 5,
-    "isCompleted": false
+    "isCompleted": false,
+    "showNextChapterButton": true
   }
 ]
