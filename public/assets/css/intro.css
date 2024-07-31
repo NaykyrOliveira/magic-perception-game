@@ -39,35 +39,40 @@
     background: rgba(77, 70, 60, 0.685);
 }
 
-@media screen and (max-width: 630px) {
-    .game-title {
-        font-size: 2rem;
-        margin-bottom: 0.625rem;
-    }
-    
-    .game-description {
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
-        max-width: 600px;
-        text-align: start;
-    }
-}
-
 @media screen and (max-width: 356px) {
     .start-button {
-        width: 175px;
-        font-size: 1.35rem;
-       
+        width: 150px;
+        font-size: 1.2rem;
     }
 
     .game-title {
         font-size: 1.5rem;
+        margin-bottom: 0.5rem;
     }
     
     .game-description {
-        font-size: 1rem;
-        margin-bottom: 2rem;
-        max-width: 600px;
-        text-align: start;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        max-width: 90%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .game-title {
+        font-size: 2rem;
+        margin-top: 5rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .game-description {
+        font-size: 1.1rem;
+        margin-bottom: 1.4rem;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .game-intro {
+        height: 70vh;
     }
 }

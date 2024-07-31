@@ -1,12 +1,13 @@
+/* Estilo padrão para telas grandes */
 .letter {
   display: block;
-  width: 90%;
+  width: 34%;
   max-width: 900px;
   position: relative;
   perspective: 1000px;
   line-height: 1.5;
   padding: 4em 2em;
-  margin: 75px auto;
+  margin: 8rem auto;
   font: normal 400 0.98rem/1.5 "Goudy Bookletter 1911", sans-serif;
   color: rgba(128, 96, 58, 0.849);
   background-color: #fdf5e6; 
@@ -19,8 +20,8 @@
 .letter:after {
   content: '';
   display: block;
-  width: calc(100% + 6px);
-  margin-left: -3px;
+  width: calc(100% + 10px);
+  margin-left: -5px;
   padding-bottom: 75px;
   background-color: #fdf5e6; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -44,61 +45,6 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 369px) {
-  .letter {
-    width: 90%;
-    margin: 130px auto;
-    padding: 1rem 0;
-  }
-
-  .letter:before,
-  .letter:after {
-    width: calc(100% + 10px);
-    margin-left: -5px;
-  }
-}
-
-@media (min-width: 686px) {
-  .letter {
-    margin: 130px auto;
-  }
-  
-  .letter:before,
-  .letter:after {
-    width: calc(100% + 18px);
-    margin-left: -9px;
-    padding-bottom: 100px;
-  }
-
-  .letter:before {
-    top: -97px;
-  }
-
-  .letter:after {
-    bottom: -97px;
-  }
-}
-@media (min-width: 900px) {
-  .letter {
-    margin: 150px auto;
-  }
-
-  .letter:before,
-  .letter:after {
-    width: calc(100% + 32px);
-    margin-left: -16px;
-    padding-bottom: 144.52px;
-  }
-
-  .letter:before {
-    top: -100px;
-  }
-
-  .letter:after {
-    bottom: -100px;
-  }
-}
-
 section {
   margin-bottom: 1.5rem;
 }
@@ -111,4 +57,63 @@ h2 {
 
 p {
   padding: 0 3rem;
+}
+
+@media (max-width: 1024px) {
+  .letter {
+    width: 70%;
+    margin: 8rem auto;
+    padding: 3em 1.5em;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .letter {
+    width: 85%;
+    margin: 7rem auto;
+    padding: 2.5em 1.5em;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .letter {
+    width: 89%;
+    margin: 7rem auto;
+    padding: 3em 1.5em;
+  }
+
+  .letter:before,
+  .letter:after {
+  width: calc(100% + 6px);
+  margin-left: -4px;
+  padding-bottom: 75px;
+  background-color: #fdf5e6; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    padding: 0 1rem;
+  }
 }

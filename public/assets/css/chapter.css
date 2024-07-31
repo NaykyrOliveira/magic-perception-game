@@ -1,5 +1,6 @@
-.chapter-view{
-  width: 638px;
+.chapter-view {
+  width: 100%;
+  max-width: 800px;
   background-color: oldlace;
   background: linear-gradient(90deg, rgb(218, 211, 201), rgb(242, 233, 219) 5%, oldlace 15%);
   margin: 0 auto;
@@ -10,7 +11,7 @@
 
 h1 {
   text-align: center;
-  font-size: 12px;
+  font-size: 1.5rem;
   margin-top: 20px;
   font-weight: normal;
 }
@@ -20,30 +21,28 @@ h1 {
 }
 
 .chapter_num {
-  font-size: 16px;
+  font-size: 1.2rem;
   margin-top: 50px;
   margin-bottom: 50px;
   text-transform: uppercase;
+  text-align: center;
 }
 
-.chapter_num:before, .chapter_num:before {
+.chapter_num:before,
+.chapter_num:after {
   content: "- ";
 }
 
-.chapter_num:after, .chapter_num:after {
-  content: " -";
-}
-
 .chapter_title {
-  font-size: 28px;
+  font-size: 2rem;
   font-style: italic;
   margin-bottom: 40px;
 }
 
 .copy p {
-  font-size: 16.5px;
-  margin: 0 70px;
-  line-height: 1.4em;
+  font-size: 1rem;
+  margin: 0 20px;
+  line-height: 1.9em;
   text-align: justify;
 }
 
@@ -51,16 +50,11 @@ h1 {
   text-indent: 20px;
 }
 
-.chapter_num {
-  text-align: center;
-  margin-top: 40px;
-}
-
 .chapter_curl {
   width: 40px;
   height: 40px;
   top: 0;
-  left: 600px;
+  right: -1px;
   background-color: #333;
   box-shadow: -1px 2px 7px #0000008a;
   position: absolute;
@@ -69,13 +63,12 @@ h1 {
 }
 
 .chapter_curl:hover {
-  width: 80px;
-  height: 80px;
-  left: 560px;
+  width: 60px;
+  height: 60px;
+  right: 10px;
 }
 
-
-.audio{
+.audio {
   margin-top: 25px;
 }
 
@@ -103,60 +96,47 @@ h1 {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 630px) {
-  .chapter-view{
-    width: 500px;
-    padding: 1px;
-    margin: 0 auto;
+@media screen and (max-width: 768px) {
+  .chapter-view {
+    padding: 10px;
   }
 
   .chapter_curl {
-    left: 460px;
-    position: absolute;
-    transition: all .5s ease;
+    right: 15px;
   }
-  
 }
 
-@media screen and (max-width: 356px) {
-  .chapter-view{
-    width: 330px;
-    
-    margin: 0 auto;
+@media screen and (max-width: 576px) {
+  .chapter-view {
+    padding: 10px;
   }
 
   .chapter_curl {
-    left: 290px;
-    position: absolute;
-    transition: all .5s ease;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+  }
+
+  .copy p {
+    font-size: 0.875rem;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .chapter-view {
+    padding: 5px;
+    width: 340px;
+  }
+
+  .chapter_curl {
+    width: 40px;
+    height: 40px;
+    right: -1px;
   }
 
   .copy p {
     font-size: 1rem;
     margin: 0;
   }
-
-  p {
-    padding: -1px 3rem;
-  }
-  
-}
-
-@media screen and (max-width: 686px) {
-  .chapter-view{
-    width: 450px;
-    padding: 1px;
-    margin: 0 auto;
-  }
-
-  .chapter_curl {
-    left: 410px;
-    position: absolute;
-    transition: all .5s ease;
-  }
-
-  .copy p {
-    margin: 0;
-  }
-  
 }
