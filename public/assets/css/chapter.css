@@ -4,7 +4,7 @@
   background-color: oldlace;
   background: linear-gradient(90deg, rgb(218, 211, 201), rgb(242, 233, 219) 5%, oldlace 15%);
   margin: 0 auto;
-  padding: 20px;
+  padding: 1rem 6rem;
   padding-bottom: 60px;
   position: relative;
 }
@@ -43,7 +43,7 @@ h1 {
   font-size: 1rem;
   margin: 0 20px;
   line-height: 1.9em;
-  text-align: justify;
+  text-align: center;
 }
 
 .copy p + p {
