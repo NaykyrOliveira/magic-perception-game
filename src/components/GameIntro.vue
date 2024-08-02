@@ -42,7 +42,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 @import '/public/assets/css/intro.css';
 audio {
   display: none; 
